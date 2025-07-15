@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="containernav">
+            <div class="logo">
+                <a href="#"><img src="/ICONS/10845013.png" alt="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="imgleft">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" alt="Hero Image">
+        </div>
+        <div class="hero-text">
+            <h1>Hello, I'm Victor</h1>
+            <p>I’m a web, app, and bot developer passionate about building smart, fast, and intuitive digital experiences.</p>
+            <a href="#" class="btn">Contact Me</a>
+    </section>
+    <section class="speciality">
+        <h2>My Specialities</h2>
+        <p>I specialize in building responsive websites, mobile apps, and automation bots tailored for business efficiency and user experience.</p>
+    </section>
+    <section class="services">
+        <div class="service-item">
+            <img src="/ICONS/earth-grid-symbol.png" alt="">
+            <h3>Web Development</h3>
+            <p>Creating responsive and user-friendly websites that enhance your online presence.</p>
+        </div>
+        <div class="service-item">
+            <img src="/ICONS/smartphone.png" alt="">
+            <h3>App Development</h3>
+            <p>Developing mobile applications that provide seamless user experiences across devices.</p>
+        </div>
+        <div class="service-item">
+            <img src="/ICONS/technical-support.png" alt="">
+            <h3>Bot Development</h3>
+            <p>Need automation? I build smart bots for platforms like Telegram, Discord, and web automation to save you time and money.</p>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h3>What My Clients Say</h3>
+        <div class="carousel">
+            <div class="testimonial active">
+                <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fHww" alt="Client Image">
+                <p>"Victor's work transformed our online presence. The website is not only beautiful but also functional and user-friendly."</p>
+                <h4>Jane Doe</h4>
+            </div>
+            <div class="testimonial">
+                <img src="https://media.istockphoto.com/id/2180951990/photo/happy-mid-adult-businessman-enjoying-in-the-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=JFcIO59G0d2v-ZQfFKbqHFLi9TLh9Kkzgz970YnYBHM=" alt="Client Image">
+                <p>"Working with Victor was a breeze. He understood our needs and delivered a top-notch app that exceeded our expectations."</p>
+                <h4>John Smith</h4>
+            </div>
+            <div class="testimonial">
+                <img src="https://media.istockphoto.com/id/1485546774/photo/bald-man-smiling-at-camera-standing-with-arms-crossed.webp?a=1&b=1&s=612x612&w=0&k=20&c=0ids4O4zdfqqB3DcwDY9SGuKOEgTTlpW4csklV0v8t0=" alt="Client Image">
+                <p>"The bot Victor developed for us has saved us countless hours of work. Highly recommend his services!"</p>
+                <h4>Emily Johnson</h4>
+            </div>
+            <div class="testimonial">
+                <img src="https://images.unsplash.com/photo-1748018955730-33ee77d45ae4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGElMjBndXklMjBpbWFnZXxlbnwwfHwyfHx8MA%3D%3D" alt="Client Image">
+                <p>"Clean UI, Great communication and delivered before the deadline."</p>
+                <h4>Michael Brown</h4>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <a href="index.html"><img src="/ICONS/10845013.png" alt=""></a>
+            <P>Lets Build Something Amazing Together.</P>
+        
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><img src="/ICONS/github.png" alt="GitHub"></a>
+                <a href="#"><img src="/ICONS/logo.png" alt="LinkedIn"></a>
+                <a href="#"><img src="/ICONS/twitter.png" alt="Twitter"></a>
+            </div>
+            <p class="copyright">© 2025 Victor. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    let currentIndex = 0;
+
+    function showNextTestimonial() {
+    testimonials[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    testimonials[currentIndex].classList.add('active');
+}
+
+  setInterval(showNextTestimonial, 4000); // change every 4 seconds
+</script>
+
+</body>
+</html>
