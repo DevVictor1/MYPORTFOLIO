@@ -1,0 +1,104 @@
+/* Contact page styles matching previous design */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fcfafa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 40px 30px;
+}
+.contact-left {
+  flex: 1 1 350px;
+  margin-right: 40px;
+}
+.contact-left h1 {
+  color: #141313;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.contact-left p {
+  margin-bottom: 25px;
+  color: #333;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  margin-bottom: 18px;
+}
+.form-group label {
+  font-weight: bold;
+  color: #141313;
+  margin-bottom: 6px;
+  display: block;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f4f4f4;
+  color: #333;
+}
+.contact-form button {
+  background: #141313;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: #333;
+}
+.contact-right {
+  flex: 1 1 250px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  padding: 25px 20px;
+  margin-top: 20px;
+}
+.contact-right h2 {
+  font-size: 1.3rem;
+  color: #141313;
+  margin-bottom: 15px;
+}
+.contact-icons {
+  list-style: none;
+  padding: 0;
+}
+.contact-icons li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+.contact-icons img {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+.contact-icons a {
+  color: #141313;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .contact-left {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
