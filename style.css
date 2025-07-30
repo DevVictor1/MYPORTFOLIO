@@ -39,10 +39,12 @@ body {
   padding: 20px;
 }
 .container {
-  width: 80%;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 30px 15px;
 }
+
 .intro h1 {
   font-size: 2.9rem;
   margin-bottom: 1rem;
@@ -70,9 +72,9 @@ body {
 }
 .imgleft img {
   width: 100%;
-  height: 100vh;
+  height:auto ;
   border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgb  a(0,0,0,0.1);
 }
 .hero-text h1 {
   font-size: 2.5rem;
@@ -258,3 +260,128 @@ body {
   color: #333;
 }
 
+/* 🔽 Small screens: phones (up to 600px) */
+@media (max-width: 600px) {
+  .containernav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .containernav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 10px;
+  }
+
+  .imgleft img {
+    height: auto;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .services {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .carousel {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .testimonial {
+    width: 100%;
+  }
+
+  .footer-links,
+  .footer-socials {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* 🔽 Medium screens: tablets (601px to 900px) */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .containernav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .services {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-item {
+    flex: 0 1 45%;
+    margin-bottom: 20px;
+  }
+
+  .carousel {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 20px;
+  color: #141313;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .containernav {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .hamburger {
+    display: block !important;
+  }
+  .nav-links {
+    display: none !important;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fcfafa;
+    margin-top: 0;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .nav-links.active {
+    display: flex !important;
+  }
+  .nav-links li {
+    margin: 10px 20px;
+  }
+}

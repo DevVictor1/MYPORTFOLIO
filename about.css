@@ -1,3 +1,36 @@
+/* Mobile Responsive Styles */
+@media (max-width: 600px) {
+  .about-split {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .about-left, .about-right {
+    min-width: 0;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .about-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .stat-item {
+    min-width: 0;
+    width: 100%;
+    padding: 15px;
+  }
+  .about-left h2 {
+    font-size: 1.5rem;
+  }
+  .about-left p {
+    font-size: 1rem;
+  }
+}
 /* * {
     margin: 0;
     padding: 0;

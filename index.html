@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -13,7 +14,11 @@
             <div class="logo">
                 <a href="#"><img src="/MYPORTFOLIO/ICONS/logo1.png" alt="logo"></a>
             </div>
-            <ul class="nav-links">
+            <div class="hamburger" id="hamburger">
+                <span id="hamburger-icon">&#9776;</span>
+                <span id="close-icon" style="display:none">&times;</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -23,7 +28,7 @@
     </nav>
     <section class="hero">
         <div class="imgleft">
-            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" alt="Hero Image">
+            <img src="/MYPORTFOLIO/ICONS/Mypic.jpg" alt="Hero Image">
         </div>
         <div class="hero-text">
             <h1>Hello, I'm Victor</h1>
@@ -103,12 +108,12 @@
     let currentIndex = 0;
 
     function showNextTestimonial() {
-    testimonials[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    testimonials[currentIndex].classList.add('active');
-}
+        testimonials[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % testimonials.length;
+        testimonials[currentIndex].classList.add('active');
+    }
 
-  setInterval(showNextTestimonial, 4000); // change every 4 seconds
+    setInterval(showNextTestimonial, 4000); // change every 4 seconds
 </script>
 
 </body>
